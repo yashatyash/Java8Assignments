@@ -26,7 +26,6 @@ public class Ques1 {
         System.out.println("Enter the count of marks your want to add: ");
         Scanner scanner = new Scanner(System.in);
         int length = scanner.nextInt();
-        //scanner.nextLine();
         for (int counter = 0;counter<length;counter++)
         {
             System.out.println("Enter marks "+(counter+1)+": ");
