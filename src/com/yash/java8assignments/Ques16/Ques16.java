@@ -74,7 +74,7 @@ public class Ques16 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        int option1,option2;
+        int option;
         while (true) {
             System.out.println("""
                     Enter 1 to add new item.
@@ -82,9 +82,9 @@ public class Ques16 {
                     Enter 3 to check the item by name.
                     Enter 4 to check item Date of Manufacturing or Date of Expiry
                     Enter 5 to Exit.""");
-            option1 = scanner.nextInt();
+            option = scanner.nextInt();
             scanner.nextLine();
-            switch (option1) {
+            switch (option) {
                 case 1->
                 {
                     new Ques16().addItem();
@@ -106,6 +106,7 @@ public class Ques16 {
                     scanner.close();
                     System.exit(0);
                 }
+                default -> System.out.println("Invalid Entry");
             }
         }
     }

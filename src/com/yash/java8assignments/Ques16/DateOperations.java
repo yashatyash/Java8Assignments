@@ -3,8 +3,10 @@ package com.yash.java8assignments.Ques16;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Locale;
 
 public class DateOperations {
 
@@ -31,5 +33,11 @@ public class DateOperations {
         else
             throw new Exception("Invalid Entry");
         return dateString;
+    }
+
+    public LocalDate stringToDate(String dateString)
+    {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy", Locale.ENGLISH);
+        return LocalDate.parse(dateString, formatter);
     }
 }
