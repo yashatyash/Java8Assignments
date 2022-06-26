@@ -188,7 +188,7 @@ public class Ques17 {
         String ch = scanner.nextLine();
         if (ch.equalsIgnoreCase("N"))
         {
-            System.out.println("Enter employee Date of Joining: ");
+            System.out.println("Enter employee Date of Exit: ");
             dateOfExit = scanner.nextLine();
             try {
                 dateOfExit = new DateOperations().dateConversion(dateOfExit);
