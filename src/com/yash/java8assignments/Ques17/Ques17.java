@@ -150,7 +150,6 @@ public class Ques17 {
                 case 7->
                 {
                     new Ques17().checkBirth();
-                    new Ques17().checkAnni();
                 }
                 case 8->
                 {
@@ -375,6 +374,7 @@ public class Ques17 {
                 System.out.println("There is no birthday in this month.");
                 System.out.println();
             }
+            new Ques17().checkAnni();
         }
         else
             System.out.println("No employee in the record");
@@ -426,7 +426,5 @@ public class Ques17 {
                 System.out.println();
             }
         }
-        else
-            System.out.println("No employee in the record");
     }
 }

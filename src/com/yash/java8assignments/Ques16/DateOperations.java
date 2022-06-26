@@ -37,7 +37,11 @@ public class DateOperations {
 
     public LocalDate stringToDate(String dateString)
     {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy", Locale.ENGLISH);
-        return LocalDate.parse(dateString, formatter);
+        if (dateString!=null) {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy", Locale.ENGLISH);
+            return LocalDate.parse(dateString, formatter);
+        }
+        else
+            return null;
     }
 }
